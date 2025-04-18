@@ -1,8 +1,8 @@
 {
-    "name": "conspiracyx",
+    "id": "conspiracyx",
     "title": "Conspiracy X (Unofficial)",
     "description": "An unofficial digital system for playing CONX (Conspiracy X 2nd Ed.) by Eden Studios",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "authors": [
       {
         "name": "Mystery Man From Outerspace (aka David Duke OVNI)",
@@ -65,6 +65,6 @@
     "url": "http://serveurdavid.fr/",
     "background": "/systems/conspiracyx/images/conx_background/zone_51_conspiracy_x.jpg",
     "manifest": "http://serveurdavid.fr/download/foundry/conspiracyx/system-v12.json",
-    "download": "http://serveurdavid.fr/download/foundry/conspiracyx/release-006.zip",
+    "download": "http://serveurdavid.fr/download/foundry/conspiracyx/release-007.zip",
     "license": "LICENSE.txt"
 }
