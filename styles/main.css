@@ -281,6 +281,10 @@
      font-weight: bold;
  }
 
+ .conspiracyx-chat-roll-table .w30pc {
+     width: 32%;
+ }
+
  .chat-message button {
      cursor: pointer;
  }

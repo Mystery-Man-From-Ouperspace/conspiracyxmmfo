@@ -147,10 +147,10 @@ Hooks.on("renderChatMessage", (app, html, data) => {
                                     <table class="conspiracyx-chat-roll-table">
                                         <thead>
                                             <tr>
-                                                <th>`+game.i18n.localize(`CONX.Roll`)+`</th>
-                                                <th>`+game.i18n.localize(`CONX.Modifier`)+`</th>
-                                                <th>+</th>
-                                                <th>`+game.i18n.localize(`CONX.Result`)+`</th>
+                                                <th class="w30pc">`+game.i18n.localize(`CONX.Roll`)+`</th>
+                                                <th class="w30pc">`+game.i18n.localize(`CONX.Modifier`)+`</th>
+                                                <th class="plus">+</th>
+                                                <th class="w30pc">`+game.i18n.localize(`CONX.Result`)+`</th>
                                             </tr>
                                         </thead>
                                         <tbody>
