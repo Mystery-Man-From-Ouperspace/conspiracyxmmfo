@@ -148,9 +148,9 @@ Hooks.on("renderChatMessage", (app, html, data) => {
                                         <thead>
                                             <tr>
                                                 <th class="w30pc">`+game.i18n.localize(`CONX.Roll`)+`</th>
-                                                <th class="w30pc">`+game.i18n.localize(`CONX.Modifier`)+`</th>
+                                                <th class="w30pc">`+game.i18n.localize(`CONX.Modifier2`)+`</th>
                                                 <th class="plus">+</th>
-                                                <th class="w30pc">`+game.i18n.localize(`CONX.Result`)+`</th>
+                                                <th class="w30pc">`+game.i18n.localize(`CONX.Result2`)+`</th>
                                             </tr>
                                         </thead>
                                         <tbody>

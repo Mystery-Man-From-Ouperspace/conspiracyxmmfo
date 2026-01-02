@@ -123,8 +123,10 @@
   "CONX.Roll Again": "Relancer",
   "CONX.Roll": "Lancer",
   "CONX.Cancel": "Annuler",
-  "CONX.Modifier": "Modif.",
-  "CONX.Result": "Résul.",
+  "CONX.Modifier": "Modificateur",
+  "CONX.Result": "Résultat",
+  "CONX.Modifier2": "Modif.",
+  "CONX.Result2": "Résul.",
 
   "CONX.Rule of 10!": "Règle de 10 !",
   "CONX.Rule of 1!": "Règle de 1 !",
