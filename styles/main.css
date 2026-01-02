@@ -23,6 +23,16 @@
         Global Styles
  ---------------------------------------------*/
 
+
+
+ .conspiracyx.sheet.actor .trash {
+    width: 20px;
+    text-align: right;
+    padding-right: 5px;
+ }
+
+
+
  .conspiracyx.sheet.actor .window-content,
  .conspiracyx.sheet.item .window-content {
     background: rgb(22, 22, 22);
