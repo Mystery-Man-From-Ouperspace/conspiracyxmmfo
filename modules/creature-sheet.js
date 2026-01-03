@@ -279,12 +279,6 @@ export class conspiracyxCreatureSheet extends ActorSheet {
                             totalResult = 1
                         }
 
-                        let priorTotalResult = -1
-
-                        priorTotalResult = totalResult
-
-                        if (priorTotalResult == 0) {priorTotalResult = 1}
-
                         let chatContent = `<form>
                                                 <h2>`+game.i18n.localize(`CONX.${attributeLabel}`)+` `+game.i18n.localize("CONX.Roll")+` [${this.actor.system[attributeLabel.toLowerCase()].value}]</h2>
 
@@ -297,11 +291,6 @@ export class conspiracyxCreatureSheet extends ActorSheet {
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr style="visibility: hidden;">
-                                                            <td data-roll="priorTotalResult">${priorTotalResult}</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
                                                         <tr>
                                                             <td data-roll="dice-result">[[${roll.result}]]</td>
                                                             <td data-roll="modifier">${rollMod}</td>

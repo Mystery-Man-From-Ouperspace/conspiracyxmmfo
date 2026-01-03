@@ -117,11 +117,6 @@ Hooks.on("renderChatMessage", (app, html, data) => {
             if (html[0].querySelector("[data-roll='dice-result']").textContent == 10) {ruleTag = game.i18n.localize("CONX.Rule of Ten Re-Roll")}
             if (html[0].querySelector("[data-roll='dice-result']").textContent == 1)  {ruleTag = game.i18n.localize("CONX.Rule of One Re-Roll")}
 
-            let priorTotalResult = -1
-
-            if (html[0].querySelector("[data-roll='priorTotalResult']").textContent == 10) {priorTotalResult = 10}
-            if (html[0].querySelector("[data-roll='priorTotalResult']").textContent == 1) {priorTotalResult = 1}
-
             let roll = new Roll('1d10')
             await roll.roll()
             await game?.dice3d?.showForRoll(roll)
@@ -134,17 +129,15 @@ Hooks.on("renderChatMessage", (app, html, data) => {
             if (ruleTag !== game.i18n.localize("CONX.Rule of Ten Re-Roll") && diceTotal == 1 && ruleOfMod < 0) {ruleOfMod--}
             let ruleOfDiv = ''
 
-            if (roll.result == 10 && priorTotalResult == 10) {
+            if (roll.result == 10 && ruleTag == game.i18n.localize("CONX.Rule of Ten Re-Roll")) {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 10!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-ten">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = 5
-            } else if (roll.result == 1 && priorTotalResult == 1) {
+            } else if (roll.result == 1 && ruleTag == game.i18n.localize("CONX.Rule of One Re-Roll")) {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 1!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-one">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = -5
                 if (diceTotal == 1) {ruleOfMod--}
-            } else {
-                priorTotalResult = -1 // Rupture Rule of 1/10
             }
 
             // Create Chat Content
@@ -162,11 +155,6 @@ Hooks.on("renderChatMessage", (app, html, data) => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr style="visibility: hidden;">
-                                                <td data-roll="priorTotalResult">${priorTotalResult}</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
                                             <tr>
                                                 <td class="w30pc" data-roll="dice-result">[[${roll.result}]]</td>
                                                 <td class="w30pc" data-roll="modifier">${rollMod}</td>
