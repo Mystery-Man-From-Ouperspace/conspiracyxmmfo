@@ -281,7 +281,8 @@
      font-weight: bold;
  }
 
- .conspiracyx-chat-roll-table .w30pc {
+ .conspiracyx-chat-roll-table thead tr th.w30pc,
+ .conspiracyx-chat-roll-table tbody tr td.w30pc  {
      width: 32%;
  }
 

@@ -117,6 +117,11 @@ Hooks.on("renderChatMessage", (app, html, data) => {
             if (html[0].querySelector("[data-roll='dice-result']").textContent == 10) {ruleTag = game.i18n.localize("CONX.Rule of Ten Re-Roll")}
             if (html[0].querySelector("[data-roll='dice-result']").textContent == 1)  {ruleTag = game.i18n.localize("CONX.Rule of One Re-Roll")}
 
+            let firstTotalResult = -1
+
+            if (html[0].querySelector("[data-roll='firstTotalResult']").textContent == 10) {firstTotalResult = 10}
+            if (html[0].querySelector("[data-roll='firstTotalResult']").textContent == 1) {firstTotalResult = 1}
+
             let roll = new Roll('1d10')
             await roll.roll()
             await game?.dice3d?.showForRoll(roll)
@@ -125,18 +130,19 @@ Hooks.on("renderChatMessage", (app, html, data) => {
             let attributeLabel = html[0].querySelector('h2').outerHTML
             let diceTotal = Number(html[0].querySelector("[data-roll='dice-total']").textContent)
             let rollMod = Number(html[0].querySelector("[data-roll='modifier']").textContent)
-            let ruleOfMod = ruleTag === game.i18n.localize("CONX.Rule of Ten Re-Roll") ? Number(roll.result) > 5 ? Number(roll.result) - 5 : 0 : Number(roll.result) > 5 ? 0 : Number(roll.result) - 5
+            let ruleOfMod = ruleTag === game.i18n.localize("CONX.Rule of Ten Re-Roll") ? Number(roll.result) > 5 ? Number(roll.result) - 5 : 0 : Number(roll.result) > 4 ? 1 : Number(roll.result) - 5
             let ruleOfDiv = ''
 
-            if (roll.result == 10) {
+            if (roll.result == 10 && firstTotalResult == 10) {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 10!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-ten">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = 5
-            }
-            if (roll.result == 1) {
+            } else if (roll.result == 1 && firstTotalResult == 1) {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 1!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-one">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = -5
+            } else {
+                firstTotalResult = -1 // Rupture Rule of
             }
 
             // Create Chat Content
@@ -154,11 +160,16 @@ Hooks.on("renderChatMessage", (app, html, data) => {
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <tr style="visibility: hidden;">
+                                                <td data-roll="firstTotalResult">${firstTotalResult}</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
                                             <tr>
-                                                <td data-roll="dice-result">[[${roll.result}]]</td>
-                                                <td data-roll="modifier">${rollMod}</td>
-                                                <td>+</td>
-                                                <td data-roll="dice-total">${diceTotal + ruleOfMod}</td>
+                                                <td class="w30pc" data-roll="dice-result">[[${roll.result}]]</td>
+                                                <td class="w30pc" data-roll="modifier">${rollMod}</td>
+                                                <td class="plus">+</td>
+                                                <td class="w30pc" data-roll="dice-total">${diceTotal + ruleOfMod}</td>
                                             </tr>
                                         </tbody>
                                     </table>
