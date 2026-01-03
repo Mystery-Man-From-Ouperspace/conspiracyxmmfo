@@ -126,14 +126,14 @@ Hooks.on("renderChatMessage", (app, html, data) => {
             let diceTotal = Number(html[0].querySelector("[data-roll='dice-total']").textContent)
             let rollMod = Number(html[0].querySelector("[data-roll='modifier']").textContent)
             let ruleOfMod = ruleTag === game.i18n.localize("CONX.Rule of Ten Re-Roll") ? Number(roll.result) > 5 ? Number(roll.result) - 5 : 0 : Number(roll.result) > 4 ? 0 : Number(roll.result) - 5
-            if (ruleTag !== game.i18n.localize("CONX.Rule of Ten Re-Roll") && diceTotal == 1 && ruleOfMod < 0) {ruleOfMod--}
+            if (ruleTag === game.i18n.localize("CONX.Rule of One Re-Roll") && diceTotal == 1 && ruleOfMod < 0) {ruleOfMod--}
             let ruleOfDiv = ''
 
-            if (roll.result == 10 && ruleTag == game.i18n.localize("CONX.Rule of Ten Re-Roll")) {
+            if (roll.result == 10 && ruleTag === game.i18n.localize("CONX.Rule of Ten Re-Roll")) {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 10!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-ten">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = 5
-            } else if (roll.result == 1 && ruleTag == game.i18n.localize("CONX.Rule of One Re-Roll")) {
+            } else if (roll.result == 1 && ruleTag === game.i18n.localize("CONX.Rule of One Re-Roll")) {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 1!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-one">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = -5
