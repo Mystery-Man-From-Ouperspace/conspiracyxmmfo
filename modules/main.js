@@ -142,6 +142,7 @@ Hooks.on("renderChatMessage", (app, html, data) => {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 1!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-one">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = -5
+                if (diceTotal == 1) {ruleOfMod--}
             } else {
                 priorTotalResult = -1 // Rupture Rule of 1/10
             }
