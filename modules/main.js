@@ -133,7 +133,9 @@ Hooks.on("renderChatMessage", (app, html, data) => {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 10!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-ten">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = 5
-            } else if (roll.result == 1 && ruleTag === game.i18n.localize("CONX.Rule of One Re-Roll")) {
+            }
+            
+            if (roll.result == 1 && ruleTag === game.i18n.localize("CONX.Rule of One Re-Roll")) {
                 ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 1!")+`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-one">`+game.i18n.localize(`CONX.Roll Again`)+`</button>`
                 ruleOfMod = -5
