@@ -343,7 +343,7 @@ export class conspiracyxActorSheet extends ActorSheet {
                         if (roll.result == 1) {
                             ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("CONX.Rule of 1!")+`</h2>
                                         <button type="button" data-roll="roll-again" class="rule-of-one">`+game.i18n.localize("CONX.Roll Again")+`</button>`
-                            totalResult = 0
+                            totalResult = 1
                         }
 
                         let priorTotalResult = -1

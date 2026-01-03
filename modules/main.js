@@ -131,7 +131,7 @@ Hooks.on("renderChatMessage", (app, html, data) => {
             let diceTotal = Number(html[0].querySelector("[data-roll='dice-total']").textContent)
             let rollMod = Number(html[0].querySelector("[data-roll='modifier']").textContent)
             let ruleOfMod = ruleTag === game.i18n.localize("CONX.Rule of Ten Re-Roll") ? Number(roll.result) > 5 ? Number(roll.result) - 5 : 0 : Number(roll.result) > 4 ? 0 : Number(roll.result) - 5
-            if (ruleTag !== game.i18n.localize("CONX.Rule of Ten Re-Roll") && diceTotal == 0 && ruleOfMod == 0) {ruleOfMod = 1}
+            if (ruleTag !== game.i18n.localize("CONX.Rule of Ten Re-Roll") && diceTotal == 1 && ruleOfMod < 0) {ruleOfMod--}
             let ruleOfDiv = ''
 
             if (roll.result == 10 && priorTotalResult == 10) {
