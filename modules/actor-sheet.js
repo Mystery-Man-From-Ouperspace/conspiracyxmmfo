@@ -43,6 +43,7 @@ export class conspiracyxActorSheet extends ActorSheet {
       const weapon = [];
       const power = [];
       const quality = [];
+      const pullingStrings = [];
       const skill = [];
       const drawback = [];
 
@@ -62,8 +63,9 @@ export class conspiracyxActorSheet extends ActorSheet {
                 power.push(i)
                 break
 
-            case "quality": 
-                quality.push(i)
+            case "quality":
+                if (i.system.type == "1") {pullingStrings.push(i)}
+                else {quality.push(i)}
                 break
 
             case "skill": 
@@ -77,7 +79,7 @@ export class conspiracyxActorSheet extends ActorSheet {
       }
 
       // Alphabetically sort all items
-      const itemCats = [item, equippedItem, weapon, power, quality, skill, drawback]
+      const itemCats = [item, equippedItem, weapon, power, quality, pullingStrings, skill, drawback]
       for (let category of itemCats) {
           if (category.length > 1) {
               category.sort((a,b) => {
@@ -95,6 +97,7 @@ export class conspiracyxActorSheet extends ActorSheet {
       actorData.weapon = weapon
       actorData.power = power
       actorData.quality = quality
+      actorData.pullingStrings = pullingStrings
       actorData.skill = skill
       actorData.drawback = drawback
     }
@@ -176,19 +179,19 @@ export class conspiracyxActorSheet extends ActorSheet {
 
         // Construct and assign div elements to the headers
         if(characterTypePath != undefined) {
-            attributesDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].attributePoints.value} / ${actorData.characterTypeValues[characterTypePath].attributePoints.max}]`
+            attributesDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].attributePoints.value}/${actorData.characterTypeValues[characterTypePath].attributePoints.max}]`
             this.form.querySelector('#attributes-header').append(attributesDiv)
 
-            qualityDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].qualityPoints.value} / ${actorData.characterTypeValues[characterTypePath].qualityPoints.max}]`
+            qualityDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].qualityPoints.value}/${actorData.characterTypeValues[characterTypePath].qualityPoints.max}]`
             this.form.querySelector('#quality-header').append(qualityDiv)
 
-            drawbackDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].drawbackPoints.value} / ${actorData.characterTypeValues[characterTypePath].drawbackPoints.max}]`
+            drawbackDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].drawbackPoints.value}/${actorData.characterTypeValues[characterTypePath].drawbackPoints.max}]`
             this.form.querySelector('#drawback-header').append(drawbackDiv)
 
-            skillDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].skillPoints.value} / ${actorData.characterTypeValues[characterTypePath].skillPoints.max}]`
+            skillDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].skillPoints.value}/${actorData.characterTypeValues[characterTypePath].skillPoints.max}]`
             this.form.querySelector('#skill-header').append(skillDiv)
 
-            powerDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].metaphysicsPoints.value} / ${actorData.characterTypeValues[characterTypePath].metaphysicsPoints.max}]`
+            powerDiv.innerHTML = `- [${actorData.characterTypeValues[characterTypePath].metaphysicsPoints.value}/${actorData.characterTypeValues[characterTypePath].metaphysicsPoints.max}]`
             this.form.querySelector('#power-header').append(powerDiv)
         }
     }

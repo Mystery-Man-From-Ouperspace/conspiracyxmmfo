@@ -151,7 +151,7 @@
                         <table class="item-table">
                             <thead>
                                 <tr>
-                                    <th class="table-left-align">{{ localize "CONX.Name" }}</th>
+                                    <th class="table-left-align">{{ localize "CONX.Qualities" }}</th>
                                     <th>{{ localize "CONX.Points" }}</th>
                                     <th class="trash"><span title="{{ localize 'CONX.Delete Item' }}"><i class="fas fa-trash"></i></span></th>
                                 </tr>
@@ -166,6 +166,26 @@
                                 {{/each}}
                             </tbody>
                         </table>
+
+                        <table class="item-table">
+                            <thead>
+                                <tr>
+                                    <th class="table-left-align">{{ localize "CONX.Pulling Strings" }}</th>
+                                    <th>{{ localize "CONX.Points" }}</th>
+                                    <th class="trash"><span title="{{ localize 'CONX.Delete Item' }}"><i class="fas fa-trash"></i></span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each actor.pullingStrings as |item id|}}
+                                    <tr class="item" data-item-id="{{item._id}}">
+                                        <td class="item-name">{{item.name}}</td>
+                                        <td class="table-center-align">{{item.system.cost}}</td>
+                                        <td class="trash table-center-align"><a class="item-control item-delete" title="{{ localize 'CONX.Delete Item' }}"><i class="fas fa-trash"></i></a></td>
+                                    </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+
                     </div>
                     <div class="drawbacks-container">
                         <h2 id="drawback-header" class="header-with-button">
