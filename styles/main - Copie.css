@@ -711,124 +711,124 @@
         Light Mode Settings
  ---------------------------------------------*/
 
- .theme-light .conspiracyx.sheet.actor .window-content,
- .theme-light .conspiracyx.sheet.item .window-content {
+ .conspiracyx.sheet.actor.light-mode .window-content,
+ .conspiracyx.sheet.item.light-mode .window-content {
     background: url('../images/parchment.jpg');
     color: black;
 }
 
-.theme-light .conspiracyx.sheet.actor .entity-link,
-.theme-light .conspiracyx.sheet.actor .content-link,
-.theme-light .conspiracyx.sheet.item .entity-link,
-.theme-light .conspiracyx.sheet.item .content-link {
+.conspiracyx.sheet.actor.light-mode .entity-link,
+.conspiracyx.sheet.actor.light-mode .content-link,
+.conspiracyx.sheet.item.light-mode .entity-link,
+.conspiracyx.sheet.item.light-mode .content-link {
    color: black;
 }
 
-.theme-light .conspiracyx.sheet.actor button,
-.theme-light .conspiracyx.sheet.item button {
+.conspiracyx.sheet.actor.light-mode button,
+.conspiracyx.sheet.item.light-mode button {
     color: black;
     background: none;
     border: 1px solid black;
 }
 
-.theme-light .conspiracyx.sheet.actor input,
-.theme-light .conspiracyx.sheet.actor select,
-.theme-light .conspiracyx.sheet.item input,
-.theme-light .conspiracyx.sheet.item select {
+.conspiracyx.sheet.actor.light-mode input,
+.conspiracyx.sheet.actor.light-mode select,
+.conspiracyx.sheet.item.light-mode input,
+.conspiracyx.sheet.item.light-mode select {
     color: rgb(0, 0, 0);
 }
 
-.theme-light .conspiracyx.sheet.item .window-content .editable {
+.conspiracyx.sheet.item.light-mode .window-content .editable {
     background: none;
 }
 
-body.theme-light .conspiracyx option {
+.conspiracyx.light-mode option {
     background: rgb(228, 228, 228);
 }
 
-.theme-light .app.window-app.dialog .window-content {
+.app.window-app.dialog.light-mode .window-content {
     background: url('../images/parchment.jpg');
 }
 
-.theme-light .app.window-app.dialog .dialog-content {
+.app.window-app.dialog.light-mode .dialog-content {
     color: rgb(0, 0, 0);
     background: none;
 }
 
-.theme-light .app.window-app.dialog .dialog-buttons button {
+.app.window-app.dialog.light-mode .dialog-buttons button {
     color: rgb(0, 0, 0);
     background: none;
     border: 1px solid black;
 }
 
-body.theme-light .conspiracyx .sheet-flex-container {
+.conspiracyx.light-mode .sheet-flex-container {
     background: none;
 }
 
-body.theme-light .conspiracyx .sheet-sidebar {
+.conspiracyx.light-mode .sheet-sidebar {
     background: none;
 }
 
-body.theme-light .conspiracyx .weapon-table,
-body.theme-light .conspiracyx .item-table,
-body.theme-light .conspiracyx .qualities-container,
-body.theme-light .conspiracyx .drawbacks-container,
-body.theme-light .conspiracyx .skills-container,
-body.theme-light .conspiracyx .powers-container,
-body.theme-light .conspiracyx .locations-table,
-body.theme-light .conspiracyx .facilities-table,
-body.theme-light .conspiracyx .staff-table,
-body.theme-light .conspiracyx .weaponery-table,
-body.theme-light .conspiracyx .gear-table,
-body.theme-light .conspiracyx .vehicles-table,
-body.theme-light .conspiracyx .science-table,
-body.theme-light .conspiracyx .medical-table,
-body.theme-light .conspiracyx .restricted-table {
+.conspiracyx.light-mode .weapon-table,
+.conspiracyx.light-mode .item-table,
+.conspiracyx.light-mode .qualities-container,
+.conspiracyx.light-mode .drawbacks-container,
+.conspiracyx.light-mode .skills-container,
+.conspiracyx.light-mode .powers-container,
+.conspiracyx.light-mode .locations-table,
+.conspiracyx.light-mode .facilities-table,
+.conspiracyx.light-mode .staff-table,
+.conspiracyx.light-mode .weaponery-table,
+.conspiracyx.light-mode .gear-table,
+.conspiracyx.light-mode .vehicles-table,
+.conspiracyx.light-mode .science-table,
+.conspiracyx.light-mode .medical-table,
+.conspiracyx.light-mode .restricted-table {
     background: rgba(196, 196, 196, 0.603);
 }
 
-body.theme-light .conspiracyx tbody tr:nth-child(even) {
+.conspiracyx.light-mode tbody tr:nth-child(even) {
     background: rgba(218, 218, 218, 0.541);
 }
 
-body.theme-light .conspiracyx .sheet-nav-container {
+.conspiracyx.light-mode .sheet-nav-container {
     background: rgba(114, 114, 114, 0.616);
 }
 
-body.theme-light .conspiracyx .item-description-sidebar {
+.conspiracyx.light-mode .item-description-sidebar {
     border-left: 1px solid rgb(0, 0, 0);
 }
 
-.theme-light .app.window-app.dialog .window-content {
+.app.window-app.dialog.light-mode .window-content {
     background: url('../images/parchment.jpg');
 }
 
-.theme-light .app.window-app.dialog .dialog-content {
+.app.window-app.dialog.light-mode .dialog-content {
     color: black;
     background: none;
 }
 
-.theme-light .app.window-app.dialog .dialog-buttons button {
+.app.window-app.dialog.light-mode .dialog-buttons button {
     color: black;
     background: none;
     border: 1px solid black;
 }
 
-.theme-light .conspiracyx.window-app.dialog .conspiracyx-dialog-menu {
+.conspiracyx.window-app.dialog.light-mode .conspiracyx-dialog-menu {
      background: none;
      color: black;
  }
 
- .theme-light .conspiracyx.window-app.dialog .conspiracyx-dialog-menu-text-box {
+ .conspiracyx.window-app.dialog.light-mode .conspiracyx-dialog-menu-text-box {
     background: none;
 }
 
-.theme-light .conspiracyx.window-app.dialog input,
-.theme-light .conspiracyx.window-app.dialog select {
+.conspiracyx.window-app.dialog.light-mode input,
+.conspiracyx.window-app.dialog.light-mode select {
     color: black;
 }
 
-body.theme-light .conspiracyx .item-name:hover {
+.conspiracyx.light-mode .item-name:hover {
     /* font-weight: bold; */
     color: rgb(0, 0, 0);
     filter: drop-shadow(0px 0px 6px #af010a);

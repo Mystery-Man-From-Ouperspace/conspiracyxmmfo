@@ -1,9 +1,11 @@
 export class conspiracyxActorSheet extends ActorSheet {
 
+    
     /** @override */
       static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-          classes: ["conspiracyx", "sheet", "actor", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
+          // classes: ["conspiracyx", "sheet", "actor", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
+          classes: ["conspiracyx", "sheet", "actor"],
             width: 800,
             height: 820,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "core"}],
@@ -227,8 +229,9 @@ export class conspiracyxActorSheet extends ActorSheet {
         if (actorData.essence.loss_toggle) {penaltyTags.push(`<div>`+game.i18n.localize(`CONX.Essence Loss`)+` ${actorData.essence.loss_penalty}</div>`)}
         
         // Create Classes for Dialog Box
-        let mode = game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""
-        let dialogOptions = {classes: ["dialog", "conspiracyx", mode]}
+        // let mode = game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""
+        // let dialogOptions = {classes: ["dialog", "conspiracyx", mode]}
+        let dialogOptions = {classes: ["dialog", "conspiracyx"]}
 
         // Create Dialog Prompt
         let d = new Dialog({
@@ -399,8 +402,9 @@ export class conspiracyxActorSheet extends ActorSheet {
         let weapon = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
 
         // Create Classes for Dialog Box
-        let mode = game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""
-        let dialogOptions = {classes: ["dialog", "conspiracyx", mode]}
+        // let mode = game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""
+        // let dialogOptions = {classes: ["dialog", "conspiracyx", mode]}
+        let dialogOptions = {classes: ["dialog", "conspiracyx"]}
 
         // Create Dialog Box
         let d = new Dialog({

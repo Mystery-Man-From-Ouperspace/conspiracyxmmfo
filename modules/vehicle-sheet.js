@@ -3,7 +3,8 @@ export class conspiracyxVehicleSheet extends ActorSheet {
     /** @override */
       static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-          classes: ["conspiracyx", "sheet", "actor", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
+          // classes: ["conspiracyx", "sheet", "actor", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
+          classes: ["conspiracyx", "sheet", "actor"],
           template: "systems/conspiracyx/templates/vehicle-sheet.html",
             width: 700,
             height: 780,

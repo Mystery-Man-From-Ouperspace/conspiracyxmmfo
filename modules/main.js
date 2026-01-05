@@ -74,7 +74,7 @@ Hooks.once("init", async function() {
 
       // Game Settings
       function delayedReload() {window.setTimeout(() => location.reload(), 500)}
-
+      /*
       game.settings.register("conspiracyx", "light-mode", {
         name: game.i18n.localize("CONX.Light Mode"),
         hint: game.i18n.localize("CONX.Checking this option enables Light Mode"),
@@ -84,7 +84,7 @@ Hooks.once("init", async function() {
         type: Boolean,
         onChange: delayedReload
       });
-
+      */
 
       game.settings.register("conspiracyx", "aegis-ndd", {
           name: game.i18n.localize("CONX.Aegis-NDD"),

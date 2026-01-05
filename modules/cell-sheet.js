@@ -3,7 +3,8 @@ export class conspiracyxCellSheet extends ActorSheet {
     /** @override */
       static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-          classes: ["conspiracyx", "sheet", "actor", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
+          // classes: ["conspiracyx", "sheet", "actor", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
+          classes: ["conspiracyx", "sheet", "actor"],
           template: "systems/conspiracyx/templates/cell-sheet.html",
             width: 800,
             height: 780,

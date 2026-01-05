@@ -3,7 +3,8 @@ export class conspiracyxItemSheet extends ItemSheet {
     /** @override */
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-            classes: ["conspiracyx", "sheet", "item", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
+            // classes: ["conspiracyx", "sheet", "item", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
+            classes: ["conspiracyx", "sheet", "item"],
             width: 600,
             height: 450,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body-items", initial: "description"}]
