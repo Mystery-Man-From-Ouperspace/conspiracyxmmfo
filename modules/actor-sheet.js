@@ -311,9 +311,9 @@ export class conspiracyxActorSheet extends ActorSheet {
                         // Grab the selected options
                         let attributeTestSelect = html[0].querySelector('#attributeTestSelect').value
                         let userInputModifier = Number(html[0].querySelector('#inputModifier').value)
-                        let selectedSkill = this.actor.getEmbeddedDocument("Item", html[0].querySelector('#skillSelect').value)
-                        let selectedQuality = this.actor.getEmbeddedDocument("Item", html[0].querySelector('#qualitySelect').value)
-                        let selectedDrawback = this.actor.getEmbeddedDocument("Item", html[0].querySelector('#drawbackSelect').value)
+                        let selectedSkill = this.actor.items.get(html[0].querySelector('#skillSelect').value)
+                        let selectedQuality = this.actor.items.get(html[0].querySelector('#qualitySelect').value)
+                        let selectedDrawback = this.actor.items.get(html[0].querySelector('#drawbackSelect').value)
 
                         // Set values for options
                         let attributeValue = attributeTestSelect === game.i18n.localize("CONX.Simple") ? actorData[attributeLabel.toLowerCase()].value * 2 : actorData[attributeLabel.toLowerCase()].value
@@ -399,7 +399,7 @@ export class conspiracyxActorSheet extends ActorSheet {
     _onDamageRoll(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let weapon = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let weapon = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         // Create Classes for Dialog Box
         // let mode = game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""
@@ -516,7 +516,7 @@ export class conspiracyxActorSheet extends ActorSheet {
     async _onArmorRoll(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let equippedItem = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let equippedItem = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         let roll = new Roll(equippedItem.system.armor_value)
         await roll.roll()
@@ -557,15 +557,15 @@ export class conspiracyxActorSheet extends ActorSheet {
     _onToggleEquipped(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let equippedItem = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let equippedItem = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         switch (equippedItem.system.equipped) {
             case true:
-                equippedItem.update({'data.equipped': false})
+                equippedItem.update({'system.equipped': false})
                 break
             
             case false:
-                equippedItem.update({'data.equipped': true})
+                equippedItem.update({'system.equipped': true})
                 break
         }
     }

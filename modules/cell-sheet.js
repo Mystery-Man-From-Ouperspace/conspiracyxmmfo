@@ -170,7 +170,7 @@ export class conspiracyxCellSheet extends ActorSheet {
     async _onDamageRoll(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let weapon = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let weapon = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         let roll = new Roll(weapon.system.damage)
         await roll.roll()
@@ -208,7 +208,7 @@ export class conspiracyxCellSheet extends ActorSheet {
     async _onArmorRoll(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let equippedItem = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let equippedItem = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         let roll = new Roll(equippedItem.system.armor_value)
         await roll.roll()
@@ -246,7 +246,7 @@ export class conspiracyxCellSheet extends ActorSheet {
     _onToggleEquipped(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let equippedItem = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let equippedItem = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         switch (equippedItem.system.equipped) {
             case true:

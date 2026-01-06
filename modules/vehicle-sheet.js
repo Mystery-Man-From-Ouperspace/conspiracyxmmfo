@@ -132,7 +132,7 @@ export class conspiracyxVehicleSheet extends ActorSheet {
     async _onDamageRoll(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let weapon = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let weapon = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         let roll = new Roll(weapon.system.damage)
         await roll.roll()
@@ -170,7 +170,7 @@ export class conspiracyxVehicleSheet extends ActorSheet {
     async _onArmorRoll(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let equippedItem = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let equippedItem = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         let roll = new Roll(equippedItem.system.armor_value)
         await roll.roll()
@@ -208,17 +208,18 @@ export class conspiracyxVehicleSheet extends ActorSheet {
     _onToggleEquipped(event) {
         event.preventDefault()
         let element = event.currentTarget
-        let equippedItem = this.actor.getEmbeddedDocument("Item", element.closest('.item').dataset.itemId)
+        let equippedItem = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         switch (equippedItem.system.equipped) {
             case true:
-                equippedItem.update({'data.equipped': false})
+                equippedItem.update({'system.equipped': false})
                 break
             
             case false:
-                equippedItem.update({'data.equipped': true})
+                equippedItem.update({'system.equipped': true})
                 break
         }
     }
+
 
 }
