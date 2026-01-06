@@ -175,7 +175,7 @@
             "Checking this option enables Light Mode, stripping away the dark mode aesthetics from the sheets.",
 
   "CONX.Aegis-NDD": "Play NDD Agents",
-  "CONX.Checking this option enables NDD wheel instead of Aegis wheel": "Checking this option enables NDD wheel instead of Aegis wheel when game is paused.",
+  "CONX.Checking this option enables NDD wheel instead of Aegis wheel": "Only works with Eden Studios Module (to be released). Checking this option enables NDD wheel instead of Aegis wheel when game is paused.",
           
 
   "CONX.Locations": "Locations",

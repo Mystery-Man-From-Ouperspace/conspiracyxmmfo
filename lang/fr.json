@@ -175,7 +175,7 @@
             "Cocher cette option active le Mode Clair, supprimant l'esthétique du Mode Sombre des fiches.",
 
   "CONX.Aegis-NDD": "Jouer des agents du NDD",
-  "CONX.Checking this option enables NDD wheel instead of Aegis wheel": "Cocher cette option active la roue du NDD au lieu de celle d′Aegis quand le jeu est en pause.",
+  "CONX.Checking this option enables NDD wheel instead of Aegis wheel": "Ne fonctionne que si le module Eden Studios est installé. Cocher cette option active la roue du NDD au lieu de celle d′Aegis quand le jeu est en pause.",
           
   
   "CONX.Locations": "Locaux",

@@ -396,6 +396,7 @@
      z-index: 1;
  }
  
+ /*
  .conspiracyx #sheet-logo {
      position: absolute;
      top: 0;
@@ -404,6 +405,7 @@
      border: none;
      z-index: +2;
  }
+*/
 
  .conspiracyx .sheet-nav-container {
      position: absolute;
@@ -846,6 +848,7 @@ var myVar = 4;
 document.body.className = (myVar == 5 ? "aegis" : "ndd");
 */
 
+/*
 #logo {
     content: url("/systems/conspiracyx/images/conx_logo_normal.png");
     width: 100px;
@@ -869,7 +872,7 @@ document.body.className = (myVar == 5 ? "aegis" : "ndd");
     top: -45px;
     left: calc(50% - 96px);
   }
-
+*/
 
 
 

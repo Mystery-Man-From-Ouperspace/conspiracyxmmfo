@@ -63,7 +63,7 @@
         "flags": {}
       }],
     "url": "http://serveurdavid.fr/",
-    "background": "/systems/conspiracyx/images/conx_background/zone_51_conspiracy_x.jpg",
+    "background": "/systems/conspiracyx/images/conx_background/zone_51.jpg",
     "manifest": "http://serveurdavid.fr/download/foundry/conspiracyx/system-v12.json",
     "download": "http://serveurdavid.fr/download/foundry/conspiracyx/release-007.zip",
     "license": "LICENSE.txt"

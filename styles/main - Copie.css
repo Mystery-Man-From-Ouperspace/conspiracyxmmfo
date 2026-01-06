@@ -392,6 +392,7 @@
      z-index: 1;
  }
  
+ /*
  .conspiracyx #sheet-logo {
      position: absolute;
      top: 0;
@@ -400,6 +401,7 @@
      border: none;
      z-index: +2;
  }
+*/
 
  .conspiracyx .sheet-nav-container {
      position: absolute;
