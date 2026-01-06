@@ -1,11 +1,11 @@
-export class conspiracyxCellSheet extends ActorSheet {
+export class conspiracyxmmfoCellSheet extends ActorSheet {
 
     /** @override */
       static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-          // classes: ["conspiracyx", "sheet", "actor", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
-          classes: ["conspiracyx", "sheet", "actor"],
-          template: "systems/conspiracyx/templates/cell-sheet.html",
+          // classes: ["conspiracyxmmfo", "sheet", "actor", `${game.settings.get("conspiracyxmmfo", "light-mode") ? "light-mode" : ""}`],
+          classes: ["conspiracyxmmfo", "sheet", "actor"],
+          template: "systems/conspiracyxmmfo/templates/cell-sheet.html",
             width: 800,
             height: 780,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "core"}],
@@ -180,7 +180,7 @@ export class conspiracyxCellSheet extends ActorSheet {
         let chatContent = `<div>
                                 <h2>${weapon.name}</h2>
 
-                                <table class="conspiracyx-chat-roll-table">
+                                <table class="conspiracyxmmfo-chat-roll-table">
                                     <thead>
                                         <tr>
                                             <th>`+game.i18n.localize(`CONX.Damage`)+`</th>
@@ -218,7 +218,7 @@ export class conspiracyxCellSheet extends ActorSheet {
         let chatContent = `<div>
                                 <h2>${equippedItem.name}</h2>
 
-                                <table class="conspiracyx-chat-roll-table">
+                                <table class="conspiracyxmmfo-chat-roll-table">
                                     <thead>
                                         <tr>
                                             <th>`+game.i18n.localize(`CONX.Result`)+`</th>

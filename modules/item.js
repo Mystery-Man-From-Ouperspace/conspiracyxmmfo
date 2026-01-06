@@ -1,4 +1,4 @@
-export class conspiracyxItem extends Item {
+export class conspiracyxmmfoItem extends Item {
 
     async prepareData() {
         super.prepareData()

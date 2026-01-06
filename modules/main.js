@@ -1,11 +1,11 @@
 // Import Modules
-import { conspiracyxActorSheet } from "./actor-sheet.js";
-import { conspiracyxActor } from "./actor.js";
-import { conspiracyxItem } from "./item.js";
-import { conspiracyxItemSheet } from "./item-sheet.js";
-import { conspiracyxCellSheet } from "./cell-sheet.js"
-import { conspiracyxCreatureSheet } from "./creature-sheet.js"
-import { conspiracyxVehicleSheet } from "./vehicle-sheet.js"
+import { conspiracyxmmfoActorSheet } from "./actor-sheet.js";
+import { conspiracyxmmfoActor } from "./actor.js";
+import { conspiracyxmmfoItem } from "./item.js";
+import { conspiracyxmmfoItemSheet } from "./item-sheet.js";
+import { conspiracyxmmfoCellSheet } from "./cell-sheet.js"
+import { conspiracyxmmfoCreatureSheet } from "./creature-sheet.js"
+import { conspiracyxmmfoVehicleSheet } from "./vehicle-sheet.js"
 import { registerHandlebarsHelpers } from "./helpers.js";
 
 
@@ -31,41 +31,41 @@ Hooks.once("init", async function() {
 
 
       // Define Custom Entity Classes
-      CONFIG.Actor.documentClass = conspiracyxActor
-      CONFIG.Item.documentClass = conspiracyxItem
+      CONFIG.Actor.documentClass = conspiracyxmmfoActor
+      CONFIG.Item.documentClass = conspiracyxmmfoItem
 
       // Register sheet application classes
       Actors.unregisterSheet("core", ActorSheet)
 
-      Actors.registerSheet("conspiracyx", conspiracyxActorSheet, 
+      Actors.registerSheet("conspiracyxmmfo", conspiracyxmmfoActorSheet, 
       {
           types: ["character"],
           makeDefault: true,
           label: "Default CONX Character Sheet"
       })
 
-      Actors.registerSheet("conspiracyx", conspiracyxCreatureSheet, 
+      Actors.registerSheet("conspiracyxmmfo", conspiracyxmmfoCreatureSheet, 
       {
           types: ["creature"],
           makeDefault: true,
           label: "Default CONX Creature Sheet"
       })
 
-      Actors.registerSheet("conspiracyx", conspiracyxCellSheet, 
+      Actors.registerSheet("conspiracyxmmfo", conspiracyxmmfoCellSheet, 
       {
           types: ["cell"],
           makeDefault: true,
           label: "Default CONX Cell Sheet"
       })
 
-      Actors.registerSheet("conspiracyx", conspiracyxVehicleSheet, 
+      Actors.registerSheet("conspiracyxmmfo", conspiracyxmmfoVehicleSheet, 
       {
           types: ["vehicle"],
           makeDefault: true,
           label: "Default CONX Vehicle Sheet"
       })
 
-      Items.registerSheet("conspiracyx", conspiracyxItemSheet, 
+      Items.registerSheet("conspiracyxmmfo", conspiracyxmmfoItemSheet, 
       {
           makeDefault: true,
           label: "Default CONX Item Sheet"
@@ -75,7 +75,7 @@ Hooks.once("init", async function() {
       // Game Settings
       function delayedReload() {window.setTimeout(() => location.reload(), 500)}
       /*
-      game.settings.register("conspiracyx", "light-mode", {
+      game.settings.register("conspiracyxmmfo", "light-mode", {
         name: game.i18n.localize("CONX.Light Mode"),
         hint: game.i18n.localize("CONX.Checking this option enables Light Mode"),
         scope: "world",
@@ -86,7 +86,7 @@ Hooks.once("init", async function() {
       });
       */
 
-      game.settings.register("conspiracyx", "aegis-ndd", {
+      game.settings.register("conspiracyxmmfo", "aegis-ndd", {
           name: game.i18n.localize("CONX.Aegis-NDD"),
           hint: game.i18n.localize("CONX.Checking this option enables NDD wheel instead of Aegis wheel"),
           scope: "world",
@@ -96,7 +96,7 @@ Hooks.once("init", async function() {
           onChange: delayedReload
       });
 
-      const ndd = game.settings.get("conspiracyx", "aegis-ndd");
+      const ndd = game.settings.get("conspiracyxmmfo", "aegis-ndd");
       document.body.classList.add(ndd ? "conx-ndd" : "conx-aegis");  
 
 })
@@ -147,7 +147,7 @@ Hooks.on("renderChatMessage", (app, html, data) => {
             let chatContent = `<form>
                                     ${attributeLabel}
 
-                                    <table class="conspiracyx-chat-roll-table">
+                                    <table class="conspiracyxmmfo-chat-roll-table">
                                         <thead>
                                             <tr>
                                                 <th class="w30pc">`+game.i18n.localize(`CONX.Roll`)+`</th>
@@ -175,7 +175,7 @@ Hooks.on("renderChatMessage", (app, html, data) => {
                 type: CONST.CHAT_MESSAGE_TYPES.ROLL,
                 user: game.user.id,
                 speaker: ChatMessage.getSpeaker(),
-                flavor: `<div class="conspiracyx-tags-flex-container">${tags.join('')}</div>`,
+                flavor: `<div class="conspiracyxmmfo-tags-flex-container">${tags.join('')}</div>`,
                 content: chatContent,
                 roll: roll
             })

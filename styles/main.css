@@ -25,7 +25,7 @@
 
 
 
- .conspiracyx.sheet.actor .trash {
+ .conspiracyxmmfo.sheet.actor .trash {
     width: 20px;
     text-align: right;
     padding-right: 5px;
@@ -33,21 +33,21 @@
 
 
 
- .conspiracyx.sheet.actor .window-content,
- .conspiracyx.sheet.item .window-content {
+ .conspiracyxmmfo.sheet.actor .window-content,
+ .conspiracyxmmfo.sheet.item .window-content {
     background: rgb(22, 22, 22);
     color: rgb(220, 220, 220);
 }
 
-.conspiracyx.sheet.actor .entity-link,
-.conspiracyx.sheet.actor .content-link,
-.conspiracyx.sheet.item .entity-link,
-.conspiracyx.sheet.item .content-link {
+.conspiracyxmmfo.sheet.actor .entity-link,
+.conspiracyxmmfo.sheet.actor .content-link,
+.conspiracyxmmfo.sheet.item .entity-link,
+.conspiracyxmmfo.sheet.item .content-link {
    color: black;
 }
 
-.conspiracyx.sheet.actor button,
-.conspiracyx.sheet.item button {
+.conspiracyxmmfo.sheet.actor button,
+.conspiracyxmmfo.sheet.item button {
     color: rgb(231, 231, 231);
     background:rgb(85, 85, 85);
     border: 1px solid black;
@@ -55,18 +55,18 @@
     line-height: 10px;
 }
 
-.conspiracyx.sheet.actor input,
-.conspiracyx.sheet.actor select,
-.conspiracyx.sheet.item input,
-.conspiracyx.sheet.item select {
+.conspiracyxmmfo.sheet.actor input,
+.conspiracyxmmfo.sheet.actor select,
+.conspiracyxmmfo.sheet.item input,
+.conspiracyxmmfo.sheet.item select {
     color: rgb(231, 231, 231);
 }
 
-.conspiracyx.sheet.item .window-content .editable {
+.conspiracyxmmfo.sheet.item .window-content .editable {
     background: rgb(45, 51, 56);
 }
 
-.conspiracyx option {
+.conspiracyxmmfo option {
     background: rgb(22, 22, 22);
 }
 
@@ -90,7 +90,7 @@
     background: rgb(22, 22, 22);
 }
 
- .conspiracyx-dialog-menu {
+ .conspiracyxmmfo-dialog-menu {
      display: flex;
      flex-direction: column;
      gap: 5px;
@@ -98,21 +98,21 @@
      color: rgb(231, 231, 231);
  }
 
- .conspiracyx h1,
- .conspiracyx h2,
- .conspiracyx-dialog-menu h1,
- .conspiracyx-dialog-menu h2 {
+ .conspiracyxmmfo h1,
+ .conspiracyxmmfo h2,
+ .conspiracyxmmfo-dialog-menu h1,
+ .conspiracyxmmfo-dialog-menu h2 {
      font-family: "Industria";
      width: 100%;
  }
 
- .conspiracyx-dialog-menu .menu-flex-container-row {
+ .conspiracyxmmfo-dialog-menu .menu-flex-container-row {
      display: flex;
      flex-direction: row;
      align-items: flex-start;
  }
 
- .conspiracyx-dialog-menu .menu-flex-container {
+ .conspiracyxmmfo-dialog-menu .menu-flex-container {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -123,7 +123,7 @@
      gap: 5px;
  }
 
- .conspiracyx-dialog-menu .vertical-column {
+ .conspiracyxmmfo-dialog-menu .vertical-column {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -133,37 +133,37 @@
      text-align: center;
  }
 
- .conspiracyx-dialog-menu-text-box {
+ .conspiracyxmmfo-dialog-menu-text-box {
      display: flex;
      flex-direction: column;
      background: rgba(124, 118, 118, 0.493);
      padding: 5px;
  }
 
- .conspiracyx-dialog-menu .attribute-input {
+ .conspiracyxmmfo-dialog-menu .attribute-input {
      width: 100%;
  }
 
- .conspiracyx-dialog-menu .table-center-align {
+ .conspiracyxmmfo-dialog-menu .table-center-align {
      text-align: center;
  }
 
- .conspiracyx-dialog-menu .table-bold-text {
+ .conspiracyxmmfo-dialog-menu .table-bold-text {
      font-weight: bold;
  }
 
- .conspiracyx-dialog-menu input,
- .conspiracyx-dialog-menu select {
+ .conspiracyxmmfo-dialog-menu input,
+ .conspiracyxmmfo-dialog-menu select {
      color: white;
      width: 100%;
  }
 
- .conspiracyx-dialog-menu option {
+ .conspiracyxmmfo-dialog-menu option {
     background: rgb(41, 50, 59);
  }
 
- .conspiracyx-tags-flex-container,
- .conspiracyx-tags-flex-container-item {
+ .conspiracyxmmfo-tags-flex-container,
+ .conspiracyxmmfo-tags-flex-container-item {
      color: black;
      display: flex;
      flex-direction: row;
@@ -174,7 +174,7 @@
      padding: 0 0 5px 0;
  }
 
- .conspiracyx-tags-flex-container div {
+ .conspiracyxmmfo-tags-flex-container div {
      background-color: rgba(131, 15, 15, 0.705);
      color: white;
      border-radius: 5px;
@@ -182,7 +182,7 @@
      max-width: 100%;
  }
 
- .conspiracyx-tags-flex-container-item div {
+ .conspiracyxmmfo-tags-flex-container-item div {
     background-color: rgba(0, 0, 0, 0.705);
     color: white;
     border-radius: 5px;
@@ -190,17 +190,17 @@
     max-width: 100%;
  }
 
- .conspiracyx h2 {
+ .conspiracyxmmfo h2 {
      margin: 0;
      font-size: 22px;
  }
 
- .conspiracyx .table-left-align {
+ .conspiracyxmmfo .table-left-align {
      text-align: left;
      padding: 0 0 0 10px;
  }
 
- .conspiracyx .header-with-button {
+ .conspiracyxmmfo .header-with-button {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -208,23 +208,23 @@
      gap: 5px;
  }
 
- .conspiracyx .header-with-button button {
+ .conspiracyxmmfo .header-with-button button {
      width: 30px;
  }
 
- .conspiracyx button:hover,
- .conspiracyx .item-name:hover,
- .conspiracyx .profile-img:hover {
+ .conspiracyxmmfo button:hover,
+ .conspiracyxmmfo .item-name:hover,
+ .conspiracyxmmfo .profile-img:hover {
      cursor: pointer;
  }
 
- .conspiracyx .item-name:hover {
+ .conspiracyxmmfo .item-name:hover {
      /* font-weight: bold; */
      color: rgb(255, 255, 255);
      filter: drop-shadow(0px 0px 6px #af010a);
  }
 
- .conspiracyx .item-name-flex-container {
+ .conspiracyxmmfo .item-name-flex-container {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -232,37 +232,37 @@
      gap: 5px;
  }
 
- .conspiracyx .fa-dice-d20:hover {
+ .conspiracyxmmfo .fa-dice-d20:hover {
      cursor: pointer;
      color: darkred;
  }
 
- .conspiracyx .table-center-align {
+ .conspiracyxmmfo .table-center-align {
      text-align: center;
  }
 
-.conspiracyx .table-flex-cell {
+.conspiracyxmmfo .table-flex-cell {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.conspiracyx .table-flex-cell input {
+.conspiracyxmmfo .table-flex-cell input {
     width: 30px;
 }
 
-.conspiracyx .table-equipped {
+.conspiracyxmmfo .table-equipped {
     text-align: center;
     width: 50px;
 }
 
-.conspiracyx .item input {
+.conspiracyxmmfo .item input {
     height: 15px;
     width: 15px;
 }
 
-.conspiracyx tbody tr:nth-child(even) {
+.conspiracyxmmfo tbody tr:nth-child(even) {
     background: rgba(46, 46, 46, 0.541);
 }
 
@@ -276,13 +276,13 @@
      font-family: "Industria";
  }
 
- .conspiracyx-chat-roll-table {
+ .conspiracyxmmfo-chat-roll-table {
      text-align: center;
      font-weight: bold;
  }
 
- .conspiracyx-chat-roll-table thead tr th.w30pc,
- .conspiracyx-chat-roll-table tbody tr td.w30pc  {
+ .conspiracyxmmfo-chat-roll-table thead tr th.w30pc,
+ .conspiracyxmmfo-chat-roll-table tbody tr td.w30pc  {
      width: 32%;
  }
 
@@ -300,27 +300,27 @@
     font-family: "Industria";
  }
 
- .conspiracyx .bio-container .editor {
+ .conspiracyxmmfo .bio-container .editor {
      height: 200px;
      width: 100%;
  }
 
- .conspiracyx .description-container .editor {
+ .conspiracyxmmfo .description-container .editor {
     min-height: 300px;
     width: 100%;
  }
 
- .conspiracyx .editor-content {
+ .conspiracyxmmfo .editor-content {
      min-height: 200px;
      max-height: 100%;
  }
 
- .conspiracyx .editor .tox-toolbar__group button {
+ .conspiracyxmmfo .editor .tox-toolbar__group button {
     background: rgba(190, 190, 190, 0.692);
     color: black;
  }
 
- .conspiracyx .editor .tox-edit-area {
+ .conspiracyxmmfo .editor .tox-edit-area {
      background: rgba(255, 255, 255, 0.808);
  }
 
@@ -328,7 +328,7 @@
         Character Sidebar
  ---------------------------------------------*/
 
- .conspiracyx .sheet-flex-container {
+ .conspiracyxmmfo .sheet-flex-container {
      display: flex;
      flex-direction: row;
      align-items: top;
@@ -338,7 +338,7 @@
      background: rgb(62, 64, 66);
  }
 
- .conspiracyx .sheet-sidebar {
+ .conspiracyxmmfo .sheet-sidebar {
      display: flex;
      flex-direction: column;
      min-width: 250px;
@@ -348,11 +348,11 @@
      background: rgb(90, 93, 95);
  }
 
- .conspiracyx .sheet-sidebar input {
+ .conspiracyxmmfo .sheet-sidebar input {
      text-align: center;
  }
 
- .conspiracyx .sheet-body {
+ .conspiracyxmmfo .sheet-body {
      display: flex;
      flex-direction: column;
      width: 100%;
@@ -361,27 +361,27 @@
      gap: 10px;
  }
  
- .conspiracyx .header-container {
+ .conspiracyxmmfo .header-container {
      position: relative;
      top: 0;
  }
 
- .conspiracyx .info-container {
+ .conspiracyxmmfo .info-container {
     display: flex;
     flex-direction: column;
  }
 
- .conspiracyx .polaroid-container {
+ .conspiracyxmmfo .polaroid-container {
      position: relative;
  }
 
- .conspiracyx .polaroid {
+ .conspiracyxmmfo .polaroid {
      height: 250px;
      border: none;
      z-index: -1;
  }
 
- .conspiracyx .profile-img {
+ .conspiracyxmmfo .profile-img {
      position: absolute;
      /* top: 30px; */
      top: 31px;
@@ -397,7 +397,7 @@
  }
  
  /*
- .conspiracyx #sheet-logo {
+ .conspiracyxmmfo #sheet-logo {
      position: absolute;
      top: 0;
      left: 0;
@@ -407,7 +407,7 @@
  }
 */
 
- .conspiracyx .sheet-nav-container {
+ .conspiracyxmmfo .sheet-nav-container {
      position: absolute;
      bottom: 0;
      right: 0;
@@ -422,47 +422,47 @@
 
 
  
- .conspiracyx .sheet-nav-container details > summary {
+ .conspiracyxmmfo .sheet-nav-container details > summary {
     cursor: pointer;
  }
  
- .conspiracyx .sheet-nav-container #characterTypeSelect {
+ .conspiracyxmmfo .sheet-nav-container #characterTypeSelect {
     font-size: large;
  }
 
 
 
 
- .conspiracyx .sheet-nav {
+ .conspiracyxmmfo .sheet-nav {
      display: flex;
      flex-direction: column;
      align-items: center;
      border: none !important;
  }
 
- .conspiracyx .sheet-nav a {
+ .conspiracyxmmfo .sheet-nav a {
      padding: 0 10px;
  }
 
- .conspiracyx .sheet-nav .active {
+ .conspiracyxmmfo .sheet-nav .active {
      text-decoration: underline;
  }
 
- .conspiracyx .profile-tags-container {
+ .conspiracyxmmfo .profile-tags-container {
      position: absolute;
      bottom: 0;
      left: 0;
      z-index: 3;
  }
 
- .conspiracyx .profile-tags-container .tags-flex-container {
+ .conspiracyxmmfo .profile-tags-container .tags-flex-container {
      display: flex;
      flex-direction: column;
      align-items: flex-start;
      justify-content: flex-start;
  }
 
- .conspiracyx .tags-flex-container .tag {
+ .conspiracyxmmfo .tags-flex-container .tag {
      border-radius: 5px;
      background:rgba(124, 118, 118, 0.493);
      color: darkred;
@@ -470,7 +470,7 @@
      font-size: smaller;
  }
 
- .conspiracyx .xp-container {
+ .conspiracyxmmfo .xp-container {
      position: absolute;
      top: 0;
      right: 0;
@@ -478,28 +478,28 @@
      text-align: center;
  }
 
- .conspiracyx .xp-flex-container {
+ .conspiracyxmmfo .xp-flex-container {
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
  }
 
- .conspiracyx .charname {
+ .conspiracyxmmfo .charname {
      width: 100%;
  }
 
- .conspiracyx .attribute-container {
+ .conspiracyxmmfo .attribute-container {
     margin: 0 0 10px 0;
  }
 
- .conspiracyx .resource-container {
+ .conspiracyxmmfo .resource-container {
      display: flex;
      flex-direction: column;
      padding: 0 5px;
  }
 
- .conspiracyx .resource {
+ .conspiracyxmmfo .resource {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -509,7 +509,7 @@
      padding: 5px 0;
  }
 
- .conspiracyx .resource-values {
+ .conspiracyxmmfo .resource-values {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -519,19 +519,19 @@
      width: 50%;
  }
 
- .conspiracyx .resource .attribute input {
+ .conspiracyxmmfo .resource .attribute input {
      width: 75%;
      height: 20px;
      color: white;
  }
 
- .conspiracyx .resource .secondaryAttribute input {
+ .conspiracyxmmfo .resource .secondaryAttribute input {
     width: 50px;
     height: 20px;
     color: white;
  }
 
- .conspiracyx .resource button {
+ .conspiracyxmmfo .resource button {
      width: 50%;
      height: 25px;
      line-height: 10px;
@@ -539,13 +539,13 @@
      border: 1px solid black;
  }
 
- .conspiracyx #characterTypeSelect {
+ .conspiracyxmmfo #characterTypeSelect {
      font-family: "Industria";
      font-size: x-large;
      text-align: center !important;
  }
 
- .conspiracyx #attributes-header {
+ .conspiracyxmmfo #attributes-header {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -557,28 +557,28 @@
         Character Body Content
  ---------------------------------------------*/
 
- .conspiracyx .bio-container {
+ .conspiracyxmmfo .bio-container {
      display: flex;
      flex-direction: column;
      border-bottom: 1px solid;
  }
 
- .conspiracyx .skill-item-container {
+ .conspiracyxmmfo .skill-item-container {
      display: flex;
      flex-direction: row;
      align-items: top;
      gap: 10px;
  }
 
- .conspiracyx .qualities-container,
- .conspiracyx .drawbacks-container,
- .conspiracyx .skills-container,
- .conspiracyx .powers-container {
+ .conspiracyxmmfo .qualities-container,
+ .conspiracyxmmfo .drawbacks-container,
+ .conspiracyxmmfo .skills-container,
+ .conspiracyxmmfo .powers-container {
      width: 50%;
      border-radius: 3px;
  }
 
- .conspiracyx .equipment-header {
+ .conspiracyxmmfo .equipment-header {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -588,7 +588,7 @@
      background: rgba(124, 118, 118, 0.493);
  }
 
- .conspiracyx .encumbrance-resource {
+ .conspiracyxmmfo .encumbrance-resource {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -596,30 +596,30 @@
      font-family: "Industria";
  }
 
- .conspiracyx .encumbrance-resource div {
+ .conspiracyxmmfo .encumbrance-resource div {
      font-size: 20px;
  }
 
- .conspiracyx .weapon-table,
- .conspiracyx .item-table,
- .conspiracyx .qualities-container,
- .conspiracyx .drawbacks-container,
- .conspiracyx .skills-container,
- .conspiracyx .powers-container,
- .conspiracyx .locations-table,
- .conspiracyx .facilities-table,
- .conspiracyx .staff-table,
- .conspiracyx .weaponery-table,
- .conspiracyx .gear-table,
- .conspiracyx .vehicles-table,
- .conspiracyx .science-table,
- .conspiracyx .medical-table,
- .conspiracyx .restricted-table {
+ .conspiracyxmmfo .weapon-table,
+ .conspiracyxmmfo .item-table,
+ .conspiracyxmmfo .qualities-container,
+ .conspiracyxmmfo .drawbacks-container,
+ .conspiracyxmmfo .skills-container,
+ .conspiracyxmmfo .powers-container,
+ .conspiracyxmmfo .locations-table,
+ .conspiracyxmmfo .facilities-table,
+ .conspiracyxmmfo .staff-table,
+ .conspiracyxmmfo .weaponery-table,
+ .conspiracyxmmfo .gear-table,
+ .conspiracyxmmfo .vehicles-table,
+ .conspiracyxmmfo .science-table,
+ .conspiracyxmmfo .medical-table,
+ .conspiracyxmmfo .restricted-table {
      margin: 10px 0 0 0;
      background: rgba(78, 78, 78, 0.603);
  }
 
- .conspiracyx .armor-button-cell button {
+ .conspiracyxmmfo .armor-button-cell button {
      max-width: 75%;
      height: 18px;
      line-height: 10px;
@@ -629,18 +629,18 @@
         Item Sheets
  ---------------------------------------------*/
 
- .conspiracyx .item-sheet-container {
+ .conspiracyxmmfo .item-sheet-container {
     padding: 0 5px;
     background: rgb(41, 50, 59);
     height: 100%;
  }
 
- .conspiracyx .item-sheet-header {
+ .conspiracyxmmfo .item-sheet-header {
      display: flex;
      flex-direction: row;
  }
 
- .conspiracyx .item-header-container {
+ .conspiracyxmmfo .item-header-container {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -649,13 +649,13 @@
      gap: 10px;
  }
 
- .conspiracyx .item-img {
+ .conspiracyxmmfo .item-img {
      width: 50px;
      height: 50px;
      border: none;
  }
 
- .conspiracyx .item-resource-container {
+ .conspiracyxmmfo .item-resource-container {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -665,40 +665,40 @@
      text-align: center;
  }
 
- .conspiracyx .description-container table th {
+ .conspiracyxmmfo .description-container table th {
      width: 50%;
      text-align: left;
  }
 
- .conspiracyx .description-container table input {
+ .conspiracyxmmfo .description-container table input {
      text-align: center;
  }
 
- .conspiracyx .description-container {
+ .conspiracyxmmfo .description-container {
      display: flex;
      flex-direction: row;
      height: 100%;
  }
 
- .conspiracyx .item-description-sidebar {
+ .conspiracyxmmfo .item-description-sidebar {
      width: 100%;
      padding: 0 5px;
      border-left: 1px solid rgb(231, 231, 231);
  }
 
- .conspiracyx .item-attribute-sidebar {
+ .conspiracyxmmfo .item-attribute-sidebar {
      min-width: 40%;
      height: 100%;
      padding: 0 5px;
  }
 
- .conspiracyx .item-attribute-sidebar table select,
- .conspiracyx .item-attribute-sidebar table input {
+ .conspiracyxmmfo .item-attribute-sidebar table select,
+ .conspiracyxmmfo .item-attribute-sidebar table input {
      width: 100%;
      height: 20px;
  }
 
- .conspiracyx .item-attribute-flex-container {
+ .conspiracyxmmfo .item-attribute-flex-container {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -709,7 +709,7 @@
         Limited Permission Sheets
  ---------------------------------------------*/
 
- .conspiracyx .blur {
+ .conspiracyxmmfo .blur {
      filter: blur(5px);
  }
 
@@ -717,38 +717,38 @@
         Light Theme Settings
  ---------------------------------------------*/
 
- .theme-light .conspiracyx.sheet.actor .window-content,
- .theme-light .conspiracyx.sheet.item .window-content {
+ .theme-light .conspiracyxmmfo.sheet.actor .window-content,
+ .theme-light .conspiracyxmmfo.sheet.item .window-content {
     background: url('../images/parchment.jpg');
     color: black;
 }
 
-.theme-light .conspiracyx.sheet.actor .entity-link,
-.theme-light .conspiracyx.sheet.actor .content-link,
-.theme-light .conspiracyx.sheet.item .entity-link,
-.theme-light .conspiracyx.sheet.item .content-link {
+.theme-light .conspiracyxmmfo.sheet.actor .entity-link,
+.theme-light .conspiracyxmmfo.sheet.actor .content-link,
+.theme-light .conspiracyxmmfo.sheet.item .entity-link,
+.theme-light .conspiracyxmmfo.sheet.item .content-link {
    color: black;
 }
 
-.theme-light .conspiracyx.sheet.actor button,
-.theme-light .conspiracyx.sheet.item button {
+.theme-light .conspiracyxmmfo.sheet.actor button,
+.theme-light .conspiracyxmmfo.sheet.item button {
     color: black;
     background: none;
     border: 1px solid black;
 }
 
-.theme-light .conspiracyx.sheet.actor input,
-.theme-light .conspiracyx.sheet.actor select,
-.theme-light .conspiracyx.sheet.item input,
-.theme-light .conspiracyx.sheet.item select {
+.theme-light .conspiracyxmmfo.sheet.actor input,
+.theme-light .conspiracyxmmfo.sheet.actor select,
+.theme-light .conspiracyxmmfo.sheet.item input,
+.theme-light .conspiracyxmmfo.sheet.item select {
     color: rgb(0, 0, 0);
 }
 
-.theme-light .conspiracyx.sheet.item .window-content .editable {
+.theme-light .conspiracyxmmfo.sheet.item .window-content .editable {
     background: none;
 }
 
-body.theme-light .conspiracyx option {
+body.theme-light .conspiracyxmmfo option {
     background: rgb(228, 228, 228);
 }
 
@@ -767,41 +767,41 @@ body.theme-light .conspiracyx option {
     border: 1px solid black;
 }
 
-body.theme-light .conspiracyx .sheet-flex-container {
+body.theme-light .conspiracyxmmfo .sheet-flex-container {
     background: none;
 }
 
-body.theme-light .conspiracyx .sheet-sidebar {
+body.theme-light .conspiracyxmmfo .sheet-sidebar {
     background: none;
 }
 
-body.theme-light .conspiracyx .weapon-table,
-body.theme-light .conspiracyx .item-table,
-body.theme-light .conspiracyx .qualities-container,
-body.theme-light .conspiracyx .drawbacks-container,
-body.theme-light .conspiracyx .skills-container,
-body.theme-light .conspiracyx .powers-container,
-body.theme-light .conspiracyx .locations-table,
-body.theme-light .conspiracyx .facilities-table,
-body.theme-light .conspiracyx .staff-table,
-body.theme-light .conspiracyx .weaponery-table,
-body.theme-light .conspiracyx .gear-table,
-body.theme-light .conspiracyx .vehicles-table,
-body.theme-light .conspiracyx .science-table,
-body.theme-light .conspiracyx .medical-table,
-body.theme-light .conspiracyx .restricted-table {
+body.theme-light .conspiracyxmmfo .weapon-table,
+body.theme-light .conspiracyxmmfo .item-table,
+body.theme-light .conspiracyxmmfo .qualities-container,
+body.theme-light .conspiracyxmmfo .drawbacks-container,
+body.theme-light .conspiracyxmmfo .skills-container,
+body.theme-light .conspiracyxmmfo .powers-container,
+body.theme-light .conspiracyxmmfo .locations-table,
+body.theme-light .conspiracyxmmfo .facilities-table,
+body.theme-light .conspiracyxmmfo .staff-table,
+body.theme-light .conspiracyxmmfo .weaponery-table,
+body.theme-light .conspiracyxmmfo .gear-table,
+body.theme-light .conspiracyxmmfo .vehicles-table,
+body.theme-light .conspiracyxmmfo .science-table,
+body.theme-light .conspiracyxmmfo .medical-table,
+body.theme-light .conspiracyxmmfo .restricted-table {
     background: rgba(196, 196, 196, 0.603);
 }
 
-body.theme-light .conspiracyx tbody tr:nth-child(even) {
+body.theme-light .conspiracyxmmfo tbody tr:nth-child(even) {
     background: rgba(218, 218, 218, 0.541);
 }
 
-body.theme-light .conspiracyx .sheet-nav-container {
+body.theme-light .conspiracyxmmfo .sheet-nav-container {
     background: rgba(114, 114, 114, 0.616);
 }
 
-body.theme-light .conspiracyx .item-description-sidebar {
+body.theme-light .conspiracyxmmfo .item-description-sidebar {
     border-left: 1px solid rgb(0, 0, 0);
 }
 
@@ -820,21 +820,21 @@ body.theme-light .conspiracyx .item-description-sidebar {
     border: 1px solid black;
 }
 
-.theme-light .conspiracyx.window-app.dialog .conspiracyx-dialog-menu {
+.theme-light .conspiracyxmmfo.window-app.dialog .conspiracyxmmfo-dialog-menu {
      background: none;
      color: black;
  }
 
- .theme-light .conspiracyx.window-app.dialog .conspiracyx-dialog-menu-text-box {
+ .theme-light .conspiracyxmmfo.window-app.dialog .conspiracyxmmfo-dialog-menu-text-box {
     background: none;
 }
 
-.theme-light .conspiracyx.window-app.dialog input,
-.theme-light .conspiracyx.window-app.dialog select {
+.theme-light .conspiracyxmmfo.window-app.dialog input,
+.theme-light .conspiracyxmmfo.window-app.dialog select {
     color: black;
 }
 
-body.theme-light .conspiracyx .item-name:hover {
+body.theme-light .conspiracyxmmfo .item-name:hover {
     /* font-weight: bold; */
     color: rgb(0, 0, 0);
     filter: drop-shadow(0px 0px 6px #af010a);
@@ -850,7 +850,7 @@ document.body.className = (myVar == 5 ? "aegis" : "ndd");
 
 /*
 #logo {
-    content: url("/systems/conspiracyx/images/conx_logo_normal.png");
+    content: url("/systems/conspiracyxmmfo/images/conx_logo_normal.png");
     width: 100px;
     height: 25px;
     margin-left: 9px;
@@ -858,7 +858,7 @@ document.body.className = (myVar == 5 ? "aegis" : "ndd");
   }
 
   body.conx-aegis #pause > img {
-    content: url("/systems/conspiracyx/images/aegis.png");
+    content: url("/systems/conspiracyxmmfo/images/aegis.png");
     height: 192px;
     width: 192px;
     top: -45px;
@@ -866,7 +866,7 @@ document.body.className = (myVar == 5 ? "aegis" : "ndd");
   }
   
   body.conx-ndd #pause > img {
-    content: url("/systems/conspiracyx/images/ndd.png");
+    content: url("/systems/conspiracyxmmfo/images/ndd.png");
     height: 192px;
     width: 192px;
     top: -45px;
@@ -876,16 +876,16 @@ document.body.className = (myVar == 5 ? "aegis" : "ndd");
 
 
 
-  .conspiracyx .small-input {
+  .conspiracyxmmfo .small-input {
     width: 10%;
   }
 
 
-  .conspiracyx .influence-logo {
+  .conspiracyxmmfo .influence-logo {
     width: 20px;
   }
 
-  .conspiracyx .influence-logo img {
+  .conspiracyxmmfo .influence-logo img {
     border: none;
   }
 

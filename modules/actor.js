@@ -1,4 +1,4 @@
-export class conspiracyxActor extends Actor {
+export class conspiracyxmmfoActor extends Actor {
     async _preCreate(data, options, user) {
       await super._preCreate(data, options, user);
 

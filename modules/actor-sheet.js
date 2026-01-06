@@ -1,11 +1,11 @@
-export class conspiracyxActorSheet extends ActorSheet {
+export class conspiracyxmmfoActorSheet extends ActorSheet {
 
     
     /** @override */
       static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-          // classes: ["conspiracyx", "sheet", "actor", `${game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""}`],
-          classes: ["conspiracyx", "sheet", "actor"],
+          // classes: ["conspiracyxmmfo", "sheet", "actor", `${game.settings.get("conspiracyxmmfo", "light-mode") ? "light-mode" : ""}`],
+          classes: ["conspiracyxmmfo", "sheet", "actor"],
             width: 800,
             height: 820,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "core"}],
@@ -105,8 +105,8 @@ export class conspiracyxActorSheet extends ActorSheet {
     }
 
     get template() {
-        const path = "systems/conspiracyx/templates";
-        if (!game.user.isGM && this.actor.limited) return "systems/conspiracyx/templates/limited-character-sheet.html"; 
+        const path = "systems/conspiracyxmmfo/templates";
+        if (!game.user.isGM && this.actor.limited) return "systems/conspiracyxmmfo/templates/limited-character-sheet.html"; 
         return `${path}/${this.actor.type}-sheet.html`;
     }
 
@@ -229,17 +229,17 @@ export class conspiracyxActorSheet extends ActorSheet {
         if (actorData.essence.loss_toggle) {penaltyTags.push(`<div>`+game.i18n.localize(`CONX.Essence Loss`)+` ${actorData.essence.loss_penalty}</div>`)}
         
         // Create Classes for Dialog Box
-        // let mode = game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""
-        // let dialogOptions = {classes: ["dialog", "conspiracyx", mode]}
-        let dialogOptions = {classes: ["dialog", "conspiracyx"]}
+        // let mode = game.settings.get("conspiracyxmmfo", "light-mode") ? "light-mode" : ""
+        // let dialogOptions = {classes: ["dialog", "conspiracyxmmfo", mode]}
+        let dialogOptions = {classes: ["dialog", "conspiracyxmmfo"]}
 
         // Create Dialog Prompt
         let d = new Dialog({
             title: game.i18n.localize('CONX.Attribute Roll'),
-            content: `<div class="conspiracyx-dialog-menu">
+            content: `<div class="conspiracyxmmfo-dialog-menu">
                             <h2>`+game.i18n.localize(`CONX.${attributeLabel}`)+` `+game.i18n.localize("CONX.Roll")+`</h2>
 
-                            <div class="conspiracyx-dialog-menu-text-box">
+                            <div class="conspiracyxmmfo-dialog-menu-text-box">
                                 <div>
                                     <p>`+game.i18n.localize("CONX.Apply modifiers")+`</p>
                                     
@@ -250,7 +250,7 @@ export class conspiracyxActorSheet extends ActorSheet {
                                 </div>
                             </div>
 
-                            <div class="conspiracyx-tags-flex-container">
+                            <div class="conspiracyxmmfo-tags-flex-container">
                                 ${penaltyTags.join('')}
                             </div>
 
@@ -355,7 +355,7 @@ export class conspiracyxActorSheet extends ActorSheet {
                         let chatContent = `<form>
                                                 <h2>`+game.i18n.localize(`CONX.${attributeLabel}`)+` `+game.i18n.localize("CONX.Roll")+` [${actorData[attributeLabel.toLowerCase()].value}]</h2>
 
-                                                <table class="conspiracyx-chat-roll-table">
+                                                <table class="conspiracyxmmfo-chat-roll-table">
                                                     <thead>
                                                         <tr>
                                                             <th>`+game.i18n.localize("CONX.Roll")+`</th>
@@ -381,7 +381,7 @@ export class conspiracyxActorSheet extends ActorSheet {
                             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
                             user: game.user.id,
                             speaker: ChatMessage.getSpeaker(),
-                            flavor: `<div class="conspiracyx-tags-flex-container">${tags.join('')} ${penaltyTags.join('')}</div>`,
+                            flavor: `<div class="conspiracyxmmfo-tags-flex-container">${tags.join('')} ${penaltyTags.join('')}</div>`,
                             content: chatContent,
                             roll: roll
                           })
@@ -402,16 +402,16 @@ export class conspiracyxActorSheet extends ActorSheet {
         let weapon = this.actor.items.get(element.closest('.item').dataset.itemId)
 
         // Create Classes for Dialog Box
-        // let mode = game.settings.get("conspiracyx", "light-mode") ? "light-mode" : ""
-        // let dialogOptions = {classes: ["dialog", "conspiracyx", mode]}
-        let dialogOptions = {classes: ["dialog", "conspiracyx"]}
+        // let mode = game.settings.get("conspiracyxmmfo", "light-mode") ? "light-mode" : ""
+        // let dialogOptions = {classes: ["dialog", "conspiracyxmmfo", mode]}
+        let dialogOptions = {classes: ["dialog", "conspiracyxmmfo"]}
 
         // Create Dialog Box
         let d = new Dialog({
             title: game.i18n.localize('CONX.Weapon Roll'),
-            content: `<div class="conspiracyx-dialog-menu">
+            content: `<div class="conspiracyxmmfo-dialog-menu">
 
-                            <div class="conspiracyx-dialog-menu-text-box">
+                            <div class="conspiracyxmmfo-dialog-menu-text-box">
                                 <p><strong>`+game.i18n.localize("CONX.If a ranged weapon")+`</strong>`+game.i18n.localize("CONX.select how many shots")+`</p>
 
                                 <p>`+game.i18n.localize("CONX.Otherwise, leave default and click roll.")+`</p>
@@ -479,7 +479,7 @@ export class conspiracyxActorSheet extends ActorSheet {
                         let chatContent = `<div>
                                                 <h2>${weapon.name}</h2>
 
-                                                <table class="conspiracyx-chat-roll-table">
+                                                <table class="conspiracyxmmfo-chat-roll-table">
                                                     <thead>
                                                         <tr>
                                                             <th>`+game.i18n.localize("CONX.Damage")+`</th>
@@ -499,7 +499,7 @@ export class conspiracyxActorSheet extends ActorSheet {
                             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
                             user: game.user.id,
                             speaker: ChatMessage.getSpeaker(),
-                            flavor: `<div class="conspiracyx-tags-flex-container-item">${tags.join('')}</div>`,
+                            flavor: `<div class="conspiracyxmmfo-tags-flex-container-item">${tags.join('')}</div>`,
                             content: chatContent,
                             roll: roll
                         })
@@ -528,7 +528,7 @@ export class conspiracyxActorSheet extends ActorSheet {
         let chatContent = `<div>
                                 <h2>${equippedItem.name}</h2>
 
-                                <table class="conspiracyx-chat-roll-table">
+                                <table class="conspiracyxmmfo-chat-roll-table">
                                     <thead>
                                         <tr>
                                             <th>`+game.i18n.localize("CONX.Result")+`</th>
@@ -548,7 +548,7 @@ export class conspiracyxActorSheet extends ActorSheet {
             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
             user: game.user.id,
             speaker: ChatMessage.getSpeaker(),
-            flavor: `<div class="conspiracyx-tags-flex-container-item">${tags.join('')}</div>`,
+            flavor: `<div class="conspiracyxmmfo-tags-flex-container-item">${tags.join('')}</div>`,
             content: chatContent,
             roll: roll
           })

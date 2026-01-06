@@ -1,8 +1,8 @@
 {
-    "id": "conspiracyx",
-    "title": "Conspiracy X (Unofficial)",
+    "id": "conspiracyxmmfo",
+    "title": "Conspiracy X (Unofficial) by MMFO",
     "description": "An unofficial digital system for playing CONX (Conspiracy X 2nd Ed.) by Eden Studios",
-    "version": "0.0.7",
+    "version": "0.1.0",
     "authors": [
       {
         "name": "Mystery Man From Outerspace (aka David Duke OVNI)",
@@ -41,7 +41,7 @@
       {
         "name": "zener-cards-color",
         "label": "Zener Cards (Color)",
-        "system": "conspiracyx",
+        "system": "conspiracyxmmfo",
         "path": "packs/zener-cards-color",
         "type": "Cards",
         "ownership": {
@@ -53,7 +53,7 @@
       {
         "name": "zener-cards-bandw",
         "label": "Zener Cards (B&W)",
-        "system": "conspiracy",
+        "system": "conspiracyxmmfo",
         "path": "packs/zener-cards-bandw",
         "type": "Cards",
         "ownership": {
@@ -63,8 +63,8 @@
         "flags": {}
       }],
     "url": "http://serveurdavid.fr/",
-    "background": "/systems/conspiracyx/images/conx_background/zone_51.jpg",
-    "manifest": "http://serveurdavid.fr/download/foundry/conspiracyx/system-v12.json",
-    "download": "http://serveurdavid.fr/download/foundry/conspiracyx/release-007.zip",
+    "background": "/systems/conspiracyxmmfo/images/conx_background/zone_51.jpg",
+    "manifest": "http://serveurdavid.fr/download/foundry/conspiracyxmmfo/system-v12.json",
+    "download": "http://serveurdavid.fr/download/foundry/conspiracyxmmfo/release-007.zip",
     "license": "LICENSE.txt"
 }

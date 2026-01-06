@@ -3,7 +3,7 @@
 A fanmade FoundryVTT system to play Conspiracy X 2.0 by Eden Studios.
 
 You can purchase the rulebooks from their website https://www.edenstudios.net/ or from DrivethruRPG at
-https://preview.drivethrurpg.com/fr/publisher/10/eden-studios/category/8366/conspiracy-x-2-0
+https://preview.drivethrurpg.com/fr/publisher/10/eden-studios/category/8366/conspiracyxmmfo-x-2-0
 
 Done after DogBoneZone's:
 
@@ -19,11 +19,11 @@ You can purchase the rulebooks from their website https://www.edenstudios.net/ o
 https://www.drivethrurpg.com/browse/pub/10/Eden-Studios/subcategory/57_60/All-Flesh-Must-Be-Eaten
 
 <figure>
-    <img src="images/conspiracyx-dark-mode.png">
+    <img src="images/conspiracyxmmfo-dark-mode.png">
     <figcaption>Dark Mode (Default Setting)</figcaption>
 </figure>
 
 <figure>
-    <img src="images/conspiracyx-light-mode.png">
+    <img src="images/conspiracyxmmfo-light-mode.png">
     <figcaption>Light Mode (Enabled through System Settings)</figcaption>
 </figure>
