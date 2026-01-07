@@ -61,7 +61,20 @@
           "ASSISTANT": "OWNER"
         },
         "flags": {}
-      }],
+      },
+      {
+        "name": "conx-macros",
+        "label": "Zener Cards Macros",
+        "system": "conspiracyxmmfo",
+        "path": "packs/conx-macros",
+        "type": "Macro",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "flags": {}
+      }
+    ],
     "url": "http://serveurdavid.fr/",
     "background": "/systems/conspiracyxmmfo/images/conx_background/zone_51.jpg",
     "manifest": "http://serveurdavid.fr/download/foundry/conspiracyxmmfo/system-v12.json",

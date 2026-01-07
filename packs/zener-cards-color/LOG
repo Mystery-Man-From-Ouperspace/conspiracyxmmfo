@@ -1,5 +1,14 @@
-2023/12/31-09:09:45.799 4e88 Delete type=3 #1
-2023/12/31-09:24:08.853 4f8 Level-0 table #5: started
-2023/12/31-09:24:08.871 4f8 Level-0 table #5: 3433 bytes OK
-2023/12/31-09:24:08.875 4f8 Delete type=0 #3
-2023/12/31-09:24:08.907 4f8 Manual compaction at level-0 from '!cards!PT86yRH2W30qbV9y' @ 72057594037927935 : 1 .. '!cards.cards!PT86yRH2W30qbV9y.zteTsMnl5AUqeT3U' @ 0 : 0; will stop at (end)
+2026/01/07-17:58:13.554 51e0 Recovering log #139
+2026/01/07-17:58:13.560 51e0 Delete type=0 #139
+2026/01/07-17:58:13.560 51e0 Delete type=3 #138
+2026/01/07-19:23:52.348 34ac Level-0 table #143: started
+2026/01/07-19:23:52.351 34ac Level-0 table #143: 5016 bytes OK
+2026/01/07-19:23:52.353 34ac Delete type=0 #141
+2026/01/07-19:23:52.359 34ac Manual compaction at level-0 from '!cards!v53vBl2sSQkCTe52' @ 72057594037927935 : 1 .. '!cards.cards!v53vBl2sSQkCTe52.ylTmmYtn81rIUGEw' @ 0 : 0; will stop at '!cards.cards!v53vBl2sSQkCTe52.ylTmmYtn81rIUGEw' @ 91 : 1
+2026/01/07-19:23:52.360 34ac Compacting 1@0 + 1@1 files
+2026/01/07-19:23:52.361 34ac Generated table #144@0: 26 keys, 4354 bytes
+2026/01/07-19:23:52.361 34ac Compacted 1@0 + 1@1 files => 4354 bytes
+2026/01/07-19:23:52.363 34ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/01/07-19:23:52.363 34ac Delete type=2 #11
+2026/01/07-19:23:52.363 34ac Delete type=2 #143
+2026/01/07-19:23:52.369 34ac Manual compaction at level-0 from '!cards.cards!v53vBl2sSQkCTe52.ylTmmYtn81rIUGEw' @ 91 : 1 .. '!cards.cards!v53vBl2sSQkCTe52.ylTmmYtn81rIUGEw' @ 0 : 0; will stop at (end)
