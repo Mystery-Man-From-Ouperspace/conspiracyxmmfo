@@ -77,7 +77,7 @@
     ],
     "url": "https://github.com/Mystery-Man-From-Ouperspace/conspiracyx/",
     "background": "/systems/conspiracyxmmfo/images/conx_background/zone_51.jpg",
-    "manifest": " https://github.com/Mystery-Man-From-Ouperspace/conspiracyxmmfo/releases/download/conspiracyxmmfo/system.json",
-    "download": " https://github.com/Mystery-Man-From-Ouperspace/conspiracyxmmfo/releases/download/0.1.0/release-010.zip",
+    "manifest": "https://github.com/Mystery-Man-From-Ouperspace/conspiracyxmmfo/releases/download/conspiracyxmmfo/system.json",
+    "download": "https://github.com/Mystery-Man-From-Ouperspace/conspiracyxmmfo/releases/download/0.1.0/release-010.zip",
     "license": "LICENSE.txt"
 }
