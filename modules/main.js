@@ -102,6 +102,36 @@ Hooks.once("init", async function() {
 })
 
 
+/**
+ * Adds custom dice to Dice So Nice!.
+ */
+Hooks.once("diceSoNiceReady", (dice3d) => {
+  // Called once the module is ready to listen to new rolls and display 3D animations.
+  // dice3d: Main class, instantiated and ready to use.
+
+  /**
+   * Add a colorset (theme)
+   * @param {Object} colorset (see below)
+   * @param {string} mode= "default","preferred"
+   * The "mode" parameter have 2 modes :
+   * - "default" only register the colorset
+   * - "preferred" apply the colorset if the player didn't already change his dice appearance for this world.
+   */
+  dice3d.addColorset(
+    {
+      name: "conx",
+      description: "ConX",
+      foreground: "#ffffff",
+      background: "#000000",
+      edge: "#000000",
+      font: "Industria",
+    },
+    "preferred",
+  )
+});
+
+
+
 /* -------------------------------------------- */
 /*  Chat Message Hooks                          */
 /* -------------------------------------------- */
