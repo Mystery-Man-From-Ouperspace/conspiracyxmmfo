@@ -298,6 +298,13 @@
     margin-right: 4px;
   }
 
+  
+
+  .chat-message .message-header .message-sender .avatar:hover {
+    cursor: default;
+  }
+
+
 
   /* ------------------------------------------- 
         TinyMCE Editor
