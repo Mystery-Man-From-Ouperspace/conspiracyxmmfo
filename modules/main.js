@@ -124,8 +124,9 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
    */
   dice3d.addColorset(
     {
-      name: "conx",
-      description: "ConX",
+      name: "conxb",
+      description: "Conspiracy X/B",
+      category: "Conspiracy X",
       foreground: "#ffffff",
       background: "#000000",
       edge: "#000000",
@@ -133,8 +134,20 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
     },
     "preferred",
   )
+  dice3d.addColorset(
+    {
+      name: "conxw",
+      description: "Conspiracy X/W",
+      category: "Conspiracy X",
+      foreground: "#000000",
+      background: "#ffffff",
+      edge: "#ffffff",
+      font: "Industria",
+    },
+    "default",
+  )
 
-  dice3d.addSystem({ id: "conspiracyx", name: "Conspiracy X" }, "preferred");
+  dice3d.addSystem({ id: "conxetw", name: "White E.T." }, "preferred");
   dice3d.addDicePreset({
     type: "d10",
     labels: [
@@ -147,12 +160,28 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
       "7",
       "8",
       "9",
-      "systems/conspiracyxmmfo/images/avatars/ET.png",
+      "systems/conspiracyxmmfo/images/avatars/ET_white.png",
     ],
-
-    system: "conspiracyx",
+    system: "conxetw",
   });
 
+  dice3d.addSystem({ id: "conxetb", name: "Black E.T." }, "default");
+  dice3d.addDicePreset({
+    type: "d10",
+    labels: [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "systems/conspiracyxmmfo/images/avatars/ET_black.png",
+    ],
+    system: "conxetb",
+  });
 
 });
 
