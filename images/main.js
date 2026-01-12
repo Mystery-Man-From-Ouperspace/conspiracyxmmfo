@@ -147,7 +147,7 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
       "7",
       "8",
       "9",
-      "systems/conspiracyxmmfo/images/avatars/ET.png",
+      "systems/conspiracyxmmfo/images/avatars/DiceDavidDukeOVNI.png",
     ],
 
     system: "conspiracyx",
