@@ -290,6 +290,14 @@
      cursor: pointer;
  }
 
+ .chat-message .message-header img {
+    border-radius: 5px;
+    border: 0.5px solid black;
+    max-width: 80px;
+    /* max-height: 50px; */
+    margin-right: 4px;
+  }
+
 
   /* ------------------------------------------- 
         TinyMCE Editor

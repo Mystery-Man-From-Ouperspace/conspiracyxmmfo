@@ -8,6 +8,9 @@ import { conspiracyxmmfoCreatureSheet } from "./creature-sheet.js"
 import { conspiracyxmmfoVehicleSheet } from "./vehicle-sheet.js"
 import { registerHandlebarsHelpers } from "./helpers.js";
 
+import { conspiracyxmmfoMessage } from "./chat-message.js";
+
+
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
@@ -33,6 +36,8 @@ Hooks.once("init", async function() {
       // Define Custom Entity Classes
       CONFIG.Actor.documentClass = conspiracyxmmfoActor
       CONFIG.Item.documentClass = conspiracyxmmfoItem
+
+      CONFIG.ChatMessage.documentClass = conspiracyxmmfoMessage;
 
       // Register sheet application classes
       Actors.unregisterSheet("core", ActorSheet)
