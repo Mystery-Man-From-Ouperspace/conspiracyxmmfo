@@ -2,7 +2,7 @@
     "id": "conspiracyxmmfo",
     "title": "Conspiracy X (Unofficial) by MMFO",
     "description": "An unofficial digital system for playing CONX (Conspiracy X 2nd Ed.) by Eden Studios",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "authors": [
       {
         "name": "Mystery Man From Outerspace (aka David Duke OVNI)",
@@ -78,6 +78,6 @@
     "url": "https://github.com/Mystery-Man-From-Ouperspace/conspiracyx/",
     "background": "/systems/conspiracyxmmfo/images/conx_background/zone_51.jpg",
     "manifest": "https://github.com/Mystery-Man-From-Ouperspace/conspiracyxmmfo/releases/download/conspiracyxmmfo/system.json",
-    "download": "https://github.com/Mystery-Man-From-Ouperspace/conspiracyxmmfo/releases/download/0.1.0/release-010.zip",
+    "download": "https://github.com/Mystery-Man-From-Ouperspace/conspiracyxmmfo/releases/download/0.1.0/release-011.zip",
     "license": "LICENSE.txt"
 }
