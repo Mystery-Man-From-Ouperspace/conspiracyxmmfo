@@ -2,7 +2,8 @@ export class conspiracyxmmfoItemSheet extends ItemSheet {
 
     /** @override */
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        // return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             // classes: ["conspiracyxmmfo", "sheet", "item", `${game.settings.get("conspiracyxmmfo", "light-mode") ? "light-mode" : ""}`],
             classes: ["conspiracyxmmfo", "sheet", "item"],
             width: 600,

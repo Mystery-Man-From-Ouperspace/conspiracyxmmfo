@@ -2,7 +2,8 @@ export class conspiracyxmmfoVehicleSheet extends ActorSheet {
 
     /** @override */
       static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        // return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
           // classes: ["conspiracyxmmfo", "sheet", "actor", `${game.settings.get("conspiracyxmmfo", "light-mode") ? "light-mode" : ""}`],
           classes: ["conspiracyxmmfo", "sheet", "actor"],
           template: "systems/conspiracyxmmfo/templates/vehicle-sheet.html",
