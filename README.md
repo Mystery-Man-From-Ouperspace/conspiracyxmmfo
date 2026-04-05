@@ -18,10 +18,14 @@ the quality, viability, or suitability for purpose of this product.
 You can purchase the rulebooks from their website https://www.edenstudios.net/ or from DrivethruRPG at
 https://www.drivethrurpg.com/browse/pub/10/Eden-Studios/subcategory/57_60/All-Flesh-Must-Be-Eaten
 
+****
+
 <figure>
     <img src="images/conspiracyxmmfo-dark-mode.png">
     <figcaption>Dark Mode (Default Setting)</figcaption>
 </figure>
+
+****
 
 <figure>
     <img src="images/conspiracyxmmfo-light-mode.png">
