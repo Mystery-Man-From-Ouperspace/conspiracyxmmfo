@@ -1,4 +1,4 @@
-# CONX
+# CONXMMFO
 
 A fanmade FoundryVTT system to play Conspiracy X 2.0 by Eden Studios.
 
