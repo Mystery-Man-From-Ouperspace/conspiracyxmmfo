@@ -62,7 +62,7 @@
           "ASSISTANT": "OWNER"
         },
         "flags": {}
-      }, nnn
+      },
       {
         "name": "conx-macros",
         "label": "Zener Cards Macros",
