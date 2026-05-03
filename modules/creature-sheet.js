@@ -308,9 +308,9 @@ export class conspiracyxmmfoCreatureSheet extends ActorSheet {
                                             </form>`
 
                         ChatMessage.create({
-                            type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+                            /* type: CONST.CHAT_MESSAGE_TYPES.ROLL, */
                             user: game.user.id,
-                            speaker: ChatMessage.getSpeaker(),
+                            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
                             flavor: `<div class="conspiracyxmmfo-tags-flex-container">${tags.join('')}</div>`,
                             content: chatContent,
                             roll: roll
@@ -426,9 +426,9 @@ export class conspiracyxmmfoCreatureSheet extends ActorSheet {
                                             </div>`
 
                         ChatMessage.create({
-                            type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+                            /* type: CONST.CHAT_MESSAGE_TYPES.ROLL, */
                             user: game.user.id,
-                            speaker: ChatMessage.getSpeaker(),
+                            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
                             flavor: `<div class="conspiracyxmmfo-tags-flex-container-item">${tags.join('')}</div>`,
                             content: chatContent,
                             roll: roll
@@ -473,9 +473,9 @@ export class conspiracyxmmfoCreatureSheet extends ActorSheet {
                             </div>`
 
         ChatMessage.create({
-            type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+            /* type: CONST.CHAT_MESSAGE_TYPES.ROLL, */
             user: game.user.id,
-            speaker: ChatMessage.getSpeaker(),
+            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
             content: chatContent,
             roll: roll
           })

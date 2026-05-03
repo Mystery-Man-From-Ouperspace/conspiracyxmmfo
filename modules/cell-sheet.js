@@ -200,7 +200,7 @@ export class conspiracyxmmfoCellSheet extends ActorSheet {
         ChatMessage.create({
             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
             user: game.user.id,
-            speaker: ChatMessage.getSpeaker(),
+            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
             content: chatContent,
             roll: roll
           })
@@ -238,7 +238,7 @@ export class conspiracyxmmfoCellSheet extends ActorSheet {
         ChatMessage.create({
             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
             user: game.user.id,
-            speaker: ChatMessage.getSpeaker(),
+            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
             content: chatContent,
             roll: roll
           })

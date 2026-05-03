@@ -163,7 +163,8 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
       "systems/conspiracyxmmfo/images/avatars/ET_white.png",
     ],
     system: "conxetw",
-  });
+  },
+"d10");
 
   dice3d.addSystem({ id: "conxetb", name: "Black E.T." }, "default");
   dice3d.addDicePreset({
@@ -181,7 +182,8 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
       "systems/conspiracyxmmfo/images/avatars/ET_black.png",
     ],
     system: "conxetb",
-  });
+  },
+"d10");
 
 });
 
@@ -257,7 +259,7 @@ Hooks.on("renderChatMessage", (app, html, data) => {
                                 </form>`
 
             ChatMessage.create({
-                type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+                /* type: CONST.CHAT_MESSAGE_TYPES.ROLL, */
                 user: game.user.id,
                 speaker: ChatMessage.getSpeaker(),
                 flavor: `<div class="conspiracyxmmfo-tags-flex-container">${tags.join('')}</div>`,
