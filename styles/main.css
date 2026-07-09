@@ -23,6 +23,9 @@
         Global Styles
  ---------------------------------------------*/
 
+ .conspiracyxmmfo #logo {
+    height: 0px;
+ }
 
 
  .conspiracyxmmfo.sheet.actor .trash {
