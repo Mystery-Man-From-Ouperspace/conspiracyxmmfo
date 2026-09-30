@@ -82,7 +82,7 @@
   "CONX.locations": "local",
   "CONX.facilities": "installation",
   "CONX.staff": "personnel",
-  "CONX.weaponery": "armement",
+  "CONX.weaponery": "armurerie",
   "CONX.gear": "matériel",
   "CONX.vehicles": "véhicule",
   "CONX.science": "ressource scientifique",
@@ -183,7 +183,7 @@
   "CONX.Facilities": "Installations",
   "CONX.Staff": "Personnel",
 
-  "CONX.Weaponery": "Armement",
+  "CONX.Weaponery": "Armurerie",
   "CONX.Gear": "Matériel",
   "CONX.Vehicles": "Véhicule",
 
@@ -265,7 +265,7 @@
       "locations": "Local",
       "facilities": "Installation",
       "staff": "Personnel",
-      "weaponery": "Armement",
+      "weaponery": "Armurerie",
       "gear": "Matériel",
       "vehicles": "Véhicule",
       "science": "Ressource scientifique",
