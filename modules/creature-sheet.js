@@ -391,7 +391,7 @@ export class conspiracyxmmfoCreatureSheet extends ActorSheet {
 
                         let tags = [`<div>`+game.i18n.localize("CONX.Damage Roll")+`</div>`]
                         if (firingMode != game.i18n.localize("CONX.None/Melee")) {tags.push(`<div>${firingMode}: ${shotNumber}</div>`)}
-                        if (weapon.system.damage_types[weapon.system.damage_type] != 'None') {tags.push(`<div>${weapon.system.damage_types[weapon.system.damage_type]}</div>`)}
+                        if (weapon.system.damage_types[weapon.system.damage_type] != 'None') {tags.push(`<div>`+game.i18n.localize(`CONX.${weapon.system.damage_types[weapon.system.damage_type]}`)+`</div>`)}
 
                         // Reduce Fired shots from current load chamber
                         if (shotNumber > 0) {
