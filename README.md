@@ -1,5 +1,7 @@
 # CONSPIRACYXMMFO
 
+This system won't be farther released. Please use [Classic Unisystem (Unofficial) by MMFO](https://foundryvtt.com/packages/unisystembymmfo)  instead.
+
 A fanmade FoundryVTT system to play Conspiracy X 2.0 by Eden Studios.
 
 You can purchase the rulebooks from their website https://www.edenstudios.net/ or from DrivethruRPG at

@@ -41,7 +41,7 @@
     "packs": [
       {   
         "name": "conx-lights",
-        "label": "Unisystem - Lights",
+        "label": "Conspiracy X - Lights",
         "system": "conspiracyxmmfo",
         "path": "packs/conx-lights",
         "type": "Item",
