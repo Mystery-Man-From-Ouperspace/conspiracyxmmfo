@@ -39,6 +39,17 @@
     "primaryTokenAttribute": "hp",
     "secondaryTokenAttribute": "endurance_points",
     "packs": [
+      {   
+        "name": "conx-lights",
+        "label": "Unisystem - Lights",
+        "system": "conspiracyxmmfo",
+        "path": "packs/conx-lights",
+        "type": "Item",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        }
+      },
       {
         "name": "zener-cards-color",
         "label": "Zener Cards (Color)",
